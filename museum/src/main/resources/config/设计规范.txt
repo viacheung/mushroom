@@ -1,0 +1,34 @@
+1。数据库设计格式
+
+    DROP TABLE IF EXISTS test;
+    CREATE TABLE test (
+    id VARCHAR(60) PRIMARY KEY NOT NULL COMMENT '主键id',
+    name VARCHAR(30) DEFAULT NULL COMMENT '姓名',
+    age INT(11) DEFAULT NULL COMMENT '年龄',
+    email VARCHAR(50) DEFAULT NULL COMMENT '邮箱',
+    create_time DATETIME DEFAULT NULL COMMENT '创建时间',
+    update_time DATETIME DEFAULT NULL COMMENT '修改时间',
+    version INT(11) DEFAULT '1' COMMENT '版本',
+    is_deleted INT(1) DEFAULT '0' COMMENT '逻辑删除标识,0-未删除,1-已删除'
+    ) ENGINE = INNODB CHARSET=UTF8;
+
+    INSERT INTO test(id, name, age, email, create_time)
+    VALUES
+    (1, '老板', 40 ,'boss@baomidou.com' , '2021-03-28 13:12:40'),
+    (2, '王狗蛋', 40 ,'gd@baomidou.com' , '2021-03-28 13:12:40'),
+    (3, '王鸡蛋', 40 ,'jd@baomidou.com' , '2021-03-28 13:12:40'),
+    (4, '王鸭蛋', 40 ,'yd@baomidou.com' , '2021-03-28 13:12:40'),
+    (5, '王猪蛋', 40 ,'zd@baomidou.com' , '2021-03-28 13:12:40'),
+    (6, '王软蛋', 40 ,'rd@baomidou.com' , '2021-03-28 13:12:40'),
+    (7, '王铁蛋', 40 ,'td@baomidou.com' , '2021-03-28 13:12:40')
+2。页面原型设计
+3。梳理页面对应的功能
+4。确定接口数量，方法名，传参，返回值
+  4。1前端开发
+    4。11基于模版的页面框架梳理
+    4。12html页面设计
+    4。13js脚本设计
+  4。2后端开发
+    4。21开发数据库respository
+    4。22开发service
+    4。23开发controller

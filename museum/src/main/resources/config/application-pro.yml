@@ -1,0 +1,11 @@
+server:
+  port: 9002
+
+
+#日志
+logging:
+  level:
+    root: info #root级别
+    com.lik.LikTemplate: error #package级别
+  file:
+    name: logs/LikTemplate.log

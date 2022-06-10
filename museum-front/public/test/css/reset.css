@@ -1,0 +1,33 @@
+/*默认样式重置(css reset)*/
+body,p,h1,h2,h3,h4,h5,h6,dl,dd{
+    margin: 0;
+    font-size: 12px; /* 中文字体大小的最小值 */
+    /* font-family: xx; 也可以设置字体 */
+}
+ol,ul {
+    list-style: none; /* 去除列表样式 */
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border: none; /* 在IE6中<a>标签包裹的<img>标签显示时有边框，故清除 */
+}
+a {
+    color: #464646;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f60;
+    text-decoration: underline;
+}
+/*
+*代表所有页面中的标签，也可以如下重置默认样式，但一般不这样做，
+依然一个一个标签重置
+* {
+    margin: 0;
+    padding: 0;
+}        */

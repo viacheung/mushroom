@@ -1,0 +1,11 @@
+server:
+  port: 9001
+
+
+#日志
+logging:
+  level:
+    root: info #root级别
+    com.lik.LikTemplate: warn #package级别
+  file:
+    name: logs/LikTemplate.log

@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link href="./css/reset.css" rel="stylesheet">
+		<style>
+
+			.clear{
+				clear:both;
+			}
+			
+			
+			/*********头部导航条*********/
+			.topBar {
+				background-color: #F4F4F4;
+				height: 29px;
+				width: 100%;
+			}
+			
+			.topBar .content {
+				width: 1200px;
+				margin: 0 auto;
+				line-height: 29px;
+			}
+			
+			.topBar .content .titleLeft {
+				float: left;
+			}
+			
+			.topBar .content .titleRight {
+				float: right;
+			}
+			
+			.topBar .content .titleRight span {
+				margin-right: 5px;
+			}
+			
+			.topBar .content .titleRight span:first-child {
+				color: #f51400;
+			}
+			
+			
+			
+			
+			/***************搜索条*****************/
+			.searchWrap {
+				margin-top: 30px;
+				height: 104px;
+				width: 1200px;
+				margin: o auto;
+			}
+			.clear {
+				clear: both;
+			}
+			.searchWrap>.left{
+				width: 472px;
+				height: 104px;
+				line-height: 10px;
+				float: left;
+			}
+			.searchWrap>.left img{
+				margin-top: 0px;
+				width: 400px;
+				height: 85px;
+			}
+			.searchWrap>.middle{
+				width: 575px;
+				height: 104px;
+				/* line-height: 104px; */
+				float: left;
+			}
+			.searchWrap>.middle .searchBar{
+				width: 478px;
+				height: 43px;
+				float: left;
+				margin-top: 5px;
+			}
+			.searchWrap>.middle .searchTip{
+				width: 65px;
+				height: 39px;
+				float: right;
+				margin-top: 5px;
+			}
+			.searchBar .searchInp{
+				border-style: none;
+				border-image: none;
+				border-color: none !important;
+				background-color: none !important;
+				width: 372px;
+				height: 32px;
+				border: 3px solid #00aaff;
+				border-radius: 0;
+			}
+			.searchBar .btnSearch{
+				width: 90px;
+				height: 40px;
+				margin-left: -4px;
+				background-color: #00aaff;
+				font-size: 18px;
+				font-weight: 700;
+				letter-spacing: 5px;
+				color: #fff;
+				border: 0;
+			}
+			.searchTip a{
+				display: inline-block;
+				width: 30px;
+			}
+			.searchTip span{
+				display: inline-block;
+				margin-top: 3px;
+				margin-right: 3px;
+			}
+			.searchHot{
+				margin-top: 5px;
+			}
+			.searchHot a{
+				display: inline-block;
+				margin: 0 3px;
+			}
+			.searchWrap>.right{
+				width: 130px;
+				height: 104px;
+				float: left;
+				margin-top: 20px;
+			}
+			.searchWrap .right .content{
+				width: 128px;
+				height: 104px;
+				background-image: url(./img/cart.jpg);
+				float: left;
+				background-repeat: no-repeat;
+			}
+			.searchWrap .right .content a{
+				display: inline-block;
+				margin-left: 40px;
+			}
+			.searchWrap .right .content a:first-child{
+				margin-top: 5px;
+			}
+			.searchWrap .right .content a:last-child{
+				margin-top: 2px;
+			}
+			.searchWrap .right .content .num{
+				color: #dd0001;
+				font-size: 14px;
+				font-weight: bold;
+			}
+			
+			
+			/*****************导航条******************/
+			.nav_bd{
+				background-color: #00aaff;
+				height: 39px;
+				margin-top: 10px;
+				width: 100%;
+			}
+				
+			.nav_bd .nav_bd_container{
+				width: 1200px;
+				height:39px;
+				margin: 0 auto;
+				/* background-color:#0DF4B3; */
+			}
+			.nav_bd .nav_bd_container li{
+				display: inline-block;
+				/* line-height:39px;*/
+				color: #fff;
+				font-size: 15px;
+				font-weight: bold;
+				padding-right: 47px;
+				cursor:pointer;
+				/**手型*/
+				/*cursor:e-resize;*/
+			}
+			.nav_bd .nav_bd_container li:first-child,.nav_bd .nav_bd_container li:hover{
+				background-color: #00aaff;
+			}
+			
+			
+			
+			
+			
+			.wrapSlide {
+				background-color: #fff;
+				height: 937x;
+				width: 1200px;
+				margin: 0 auto;
+
+			}
+
+			.index-sort {
+				background-color: white;
+				width: 200px;
+				height: 967px;
+				float: left;
+			}
+			
+			.wrapSlide .index-sort .one:hover{
+				background-color: #c90000;
+			}
+			
+			.wrapContent {
+				width: 980px;
+				height: 100%;
+				float: left;
+				margin-left:10px;
+			}
+			
+			.wrapContent .helpBar{
+				/*background-color: #00f;*/
+				width: 980px;
+				height:13px;
+			}
+			
+			.slider{
+				width:750px;
+				height:340px;
+				background-color:#F4F4F4;
+				margin-top:8px;
+				float:left;
+				position:relation;
+			}
+			.slider .dot{
+				position:absolute;
+				right: 275px;
+				bottom: 15px;
+			}
+			.slider .dot span{
+				display:inline-block;
+				text-align: center;
+				line-height: 20px;
+				background-color: #8C6F53;
+				margin-right: 10px;
+				width: 20px;
+				height: 20px;
+				cursor: pointer;
+				border-radius: 10px;
+				color: #fff;
+			}
+			.slider .dot span:hover{
+				background-color: #af1a29;
+			}
+			
+			.slider img{
+				width: 750px;
+				height: 340px;
+			}
+			
+			.blackboard{
+				width:220px;
+				height:340px;
+				background-color:#F9F9F9;
+				margin-left:760px;
+				float:left;
+				margin-top:-339px;
+				box-sizing: border-box;
+				border: 1px solid #C1C1C1;
+			}
+			.blackboard .blackboard1{
+				width: 206px;
+				height: 130px;
+				border-bottom: dashed 1px grey;
+			}
+			.blackboard.blackboard2{
+				width: 206px;
+			}
+			.blackboard .blackboard1 ul {
+				margin-left: 30px;
+			}
+			.blackboard.blackboard2 ul{
+				margin-left: 30px;
+			}
+			.blackboard .blackboard1 li{
+				list-style-type: disc;
+				margin-top:6px;
+			}
+			.blackboard .blackboard2 li{
+				list-style-type: disc;
+				margin-top:6px;
+				margin-left: 25px;
+				}
+			.bookWrap{
+				background-color:#fff;
+				margin-top:10px;
+			}
+			
+			.recommended-book{
+				width:750px;
+				height:340px;
+				/*background-color:#ff55ff;*/
+				float:left;
+			}
+							
+						
+			.recommended-book>.title img{
+				display: inline-block;
+			}
+			.recommended-book>.title h2{
+				display: inline-block;
+				font-size: 18px;
+				position: relative;
+				top: -11px;
+			}
+			.recommended-book .title a{
+				color: #C90000;
+				margin: 20px;
+			}
+			.recommended-book>.title{
+				height: 35px;
+				background-color: #F9F9F9;
+			}
+			
+			.recommended-book>.list{
+				height:530px;
+				/*background-color:#0f0;*/
+			}
+						
+			.recommended-book>.list .list_item{
+				width: 160px;
+				height:240px;
+				float: left;
+				/*border:dashed 1px grey;*/
+				margin: 0 10px 30px 10px;
+			}			
+						
+			.recommended-book>.list .list_item.pic{
+				width: 160px;
+				height: 160px;
+				text-align: center;
+			}			
+						
+			.recommended-book>.list .list_item .pic img{
+				display: inline-block;
+			}			
+						
+			.recommended-book>.list .list_item .bookname{
+				margin-top: 5px;
+				margin-bottom: 10px;
+			}			
+			
+			.recommended-book>.list .list_item .author{
+				color:#999999;
+				margin-bottom:2px;
+			}
+			
+			.recommended-book>.list .price1{
+				float: left;
+				font-size: 15px;
+				font-weight: bold;
+				color: #DA0000;	
+			}
+			
+			.recommended-book>.list .price2{
+				float: right;
+				color: #9c9c9c;
+			}
+			
+			.recommended-book>.list .price2 span{
+				text-decoration: line-through;
+			}
+				
+			.book-hot{
+				width: 220px;
+				height: 565px;
+				background-color: #F9F9F9;
+				margin-left: 10px;
+				float: left;
+			}
+			.book-hot .zhinan{
+				width: 220px;
+			}
+			.book-hot .rank{
+				width: 220px;
+			}
+			.book-hot .rank h2{
+				display: inline-block;
+				font-size: 18px;
+				margin-left: 6px;
+			}
+			.book-hot .rank img{
+				display: inline-block;
+			}
+			.book-hot .hot-list{
+				width: 220px;
+				height: 465px;
+				border: solid 1px gray;
+			}
+			.book-hot .hot-list .hot-list-itme{
+				border-bottom: dashed   1px gray;
+				cursor: pointer;
+				padding-top: 15px;
+				padding-bottom: 10px;
+			}
+			.book-hot .hot-list .hot-list-itme .list2{
+				display: none;
+				height: 100px;
+				background-color: #F9F9F9;
+			}
+			.book-hot .hot-list .hot-list-itme .num{
+				width:20px;
+				height:16px;
+				font-size: 16px;
+				font-weight: bold;
+				margin-left: 8px;
+				margin-right: 5px;
+				vertical-align: top;
+			}
+			.book-hot .hot-list .hot-list-itme .redcolor{
+				color: red;
+			}
+			.book-hot .hot-list .hot-list-itme:hover .list1{
+				display: none;
+			}
+			.book-hot .hot-list .hot-list-itme:hover .list2{
+				display: block;
+			}
+			.book-hot .hot-list .hot-list-itme .list2 .right{
+				height: 82px;
+				width: 160px;
+				display: inline-block;
+			}
+			.book-hot .hot-list .hot-list-itme .list2 .right .h1{
+				width: 80px;
+				height: 80px;
+				float: left;
+			}
+			.book-hot .hot-list .hot-list-itme .list2 img{
+				width: 35px;
+				height: 60px;
+				float: left;
+				display: inline-block;
+				margin-left:20px;
+			}
+			.book-hot .hot-list .hot-list-itme .list2 .right .h2{
+				float: right;
+			}
+			.book-hot .hot-list .price1{
+				font-size: 15px;
+				font-weight: bold;
+				color: #DA0000;
+			}
+			.book-hot .hot-list .price2{
+				color: #9C9C9C;
+				text-decoration: line-through;
+			}
+			
+			.lunbo{
+				width:750px;
+				height: 340px;
+			}	
+						/***1~6的小圆角****/
+						.lun div{
+							width: 15px;
+							height: 20px;
+							background-color: #646464;
+							opacity: 0.7;    /*不透明性*/
+							float: left;
+							line-height: 20px;
+							padding-left:6px ;
+							margin-top: 5px;
+							margin-right: 5px;
+							border-radius: 20px; /*给div元素添加圆角的边框*/
+							color: #fff;
+						}
+			
+			
+			
+			
+			
+		</style>
+	</head>
+	<body>
+
+		<div class="topBar">
+			<div class="content">
+				<div class="titleLeft">
+					<img src="./img/welcome.jpg">您好，欢迎光临牛首文创！
+				</div>
+				<div class="titleRight">
+					<span>请登录</span>
+					<span>免费注册 |</span>
+					<span>我的牛首 |</span>
+					<span>我要开店 |</span>
+					<span>牛首公众号 |</span>
+					<span>团购批发 |</span>
+					<span>客服服务 </span>
+				</div>
+			</div>
+		</div>
+
+		<div class="searchWrap">
+			<div class="left"><a href=""><img src="./img/logo.jpg" /></a></div>
+			<div class="middle">
+				<div class="searchBar">
+					<input type="text" class="searchInp" placeholder="欢迎来到牛首文创旗舰店" />
+					<button class="btnSearch">搜索</button>
+				</div>
+				<div class="searchTip">
+					<a href="#">同店找书</a><span><img src="./img/split.png" height="35px" /></span><a href="#">高级搜索</a>
+				</div>
+				<div class="clear"></div>
+				<div class="searchHot">热门搜索:
+					<a href="#">牛首文创猫手账</a><a href="#">千里江山图刺绣</a><a href="#">北极星怀表</a><a href="#">紫藤花下</a>
+				</div>
+			</div>
+			<div class="right">
+				<div class="content">
+					<a href="#">网站购物车<span class="num">0</span>本</a>
+					<a href="#">店铺购物车<span class="num">0</span>本</a>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="nav_bd">
+			<div class="nav_bd_container">
+				<ul>
+					<li>全部周边分类</li>
+					<li><img src="./img/sj.png" /></li>
+					<li>首页</li>
+					<li>新品</li>
+					<li>分类</li>
+					<li>销量</li>
+					<li>动态</li>
+					<li>会员</li>
+				</ul>
+			</div>
+		</div>
+
+
+
+
+		<div class="wrapSlide">
+			<div class="index-sort">
+				<div class="one" style="border: 1px solid grey; height: 90px">
+					<div style="margin-left: 30px;height:25px;font-size: 14px;font-weight: bold ">文具联名&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp></div>
+					<div style="margin-left: 25px;line-height: 20px"><a style="color: gray">牛首书签</a>&nbsp<a style="color: gray">清代印章</a><br>
+						<a style="color: gray">纪念笔</a>&nbsp<a style="color: gray">国风信封</a><br>
+						<a style="color: gray">牛首山钢笔</a>&nbsp<a style="color: gray">鎏金彩膜</a>
+					</div>
+				</div>
+				<div class="one" style="border: 1px solid grey; height: 80px">
+					<div style="margin-left: 30px;height:25px;font-size: 14px;font-weight: bold ">周边服饰&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp></div>
+					<div style="margin-left: 25px;line-height: 20px"><a style="color: gray">汉服</a>&nbsp<a style="color: gray">仿真鞋</a><a
+						 style="color: gray">清明上河卫衣</a><br>
+						<a style="color: gray">牛首帽子</a>&nbsp<a style="color: gray">飞鱼服</a><a style="color: gray">文人腰带</a>
+					</div>
+				</div>
+				<div class="one" style="border: 1px solid grey; height: 80px">
+					<div style="margin-left: 30px;height:25px;font-size: 14px;font-weight: bold ">国风日用&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp></div>
+					<div style="margin-left: 25px;line-height: 20px"><a style="color: gray">扇子</a>&nbsp<a style="color: gray">故宫水杯</a><a
+						 style="color: gray">茶具</a><br>
+						<a style="color: gray">坐垫</a>&nbsp<a style="color: gray">壁画</a><a style="color: gray">笔墨纸砚</a>
+					</div>
+				</div>
+				<div class="one" style="border: 1px solid grey; height: 90px">
+					<div style="margin-left: 30px;height:25px;font-size: 14px;font-weight: bold ">国风饰品&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp></div>
+					<div style="margin-left: 25px;line-height: 20px"><a style="color: gray">彩金手链</a>&nbsp<a style="color: gray">额前贴花</a><br>
+						<a style="color: gray">翡翠戒指</a>&nbsp<a style="color: gray">十二花簪</a><br>
+						<a style="color: gray">国风彩妆</a>&nbsp<a style="color: gray">金陵项链</a>
+					</div>
+				</div>
+				<div class="one" style="border: 1px solid grey; height: 90px">
+					<div style="margin-left: 30px;height:25px;font-size: 14px;font-weight: bold ">仿真兵器&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp></div>
+					<div style="margin-left: 25px;line-height: 20px"><a style="color: gray">清腰刀</a>&nbsp<a style="color: gray">绣春刀</a><br>
+						<a style="color: gray">飞镖</a>&nbsp<a style="color: gray">流星锤</a><br>
+						<a style="color: gray">十字弩</a>&nbsp<a style="color: gray">爆炸弓</a>
+					</div>
+				</div>
+				<div class="one" style="border: 1px solid grey; height: 90px">
+					<div style="margin-left: 30px;height:25px;font-size: 14px;font-weight: bold ">历史图书&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp></div>
+					<div style="margin-left: 25px;line-height: 20px"><a style="color: gray">岳阳楼记</a>&nbsp<a style="color: gray">葵花宝典</a><br>
+						<a style="color: gray">桃花源记</a>&nbsp<a style="color: gray">小石潭记</a><br>
+						<a style="color: gray">黄鹤楼记</a>&nbsp<a style="color: gray">核舟记</a>
+					</div>
+				</div>
+				<div style="border: 1px solid grey; height: 30px"><a href="#" style="color: black;line-height: 30px;font-size: 14px;font-weight: bold;margin-left: 10px">浏览所有分类</a></div>
+				<div style="border: 1px solid grey; height: 232px;gainsboro"><img src="./img/left.jpg" width="200px"; height="350px" ></div>
+
+			</div>
+			<div class="wrapContent">
+
+				<div class="helpBar">
+					<a href="#">如何购买 |</a><a href="#">如何支付 |</a><a href="#">缺货怎么办 |</a><a href="#">配送方式与配送费 |</a>
+					<a href="#">普通会员与VIP会员 |</a><a href="#">积分说明 |</a><a href="#">礼券说明 |</a><a href="#">账户余额说明 |</a><a href="#">退款退货
+						|</a>
+
+				</div>
+
+				<div style="position: absolute;"></div>
+				<div class="wrapContent">
+					<div class="wrapContentL">
+						<img id="lunbo" class="lunbo" src="img/1.jpg" alt="">
+						<div class="lun" style="position: absolute;width: 160px;height: 30px;top: 530px;left: 830px;padding: 5px 0px 5px 10px;line-height: 30px;">
+							<div id="num1" onmouseover="changeColor1()">1</div>
+							<div id="num2" onmouseover="changeColor2()">2</div>
+							<div id="num3" onmouseover="changeColor3()">3</div>
+							<div id="num4" onmouseover="changeColor4()">4</div>
+							<div id="num5" onmouseover="changeColor5()">5</div>
+							<div id="num6" onmouseover="changeColor6()">6</div>
+						</div>
+						<script type="text/javascript">
+							var i = 1;
+							setInterval(function() {
+								if (i > 6) {
+									i = 1;
+									document.getElementById("lunbo").setAttribute('src', 'img/' + i + '.jpg')
+									document.getElementById("num" + 6).style.background = "#646464"
+									document.getElementById("num" + 6).style.opacity = "0.7"
+									document.getElementById("num" + i).style.background = "red"
+									document.getElementById("num" + i).style.opacity = "1"
+								} else {
+									var t = i - 1;
+									if (t >= 1) {
+										document.getElementById("num" + t).style.background = "#646464"
+										document.getElementById("num" + t).style.opacity = "0.7"
+									}
+									document.getElementById("num" + i).style.background = "red"
+									document.getElementById("num" + i).style.opacity = "1"
+									document.getElementById("lunbo").setAttribute('src', 'img/' + i + '.jpg')
+									i++;
+								}
+
+							}, 2000)
+						</script>
+
+
+
+
+
+
+
+
+						<div class="blackboard">
+							<div class="blackboard1" style="padding: 10px 10px;">
+								<h2 style="font-size: 16px;">黑板报</h2>
+								<ul>
+									<li><a href="#">开工大吉</a></li>
+									<li><a href="#">2021年春节放假通知</a></li>
+									<li><a href="#">新年快乐！</a></li>
+									<li><a href="#">如何赚书费 书费怎么花</a></li>
+								</ul>
+							</div>
+							<div class="blackboard2" style="padding: 10px 10px;">
+								<h2 style="font-size: 16px;">购物指南</h2>
+								<ul>
+									<li><a href="#">支付宝担保交易，安全快</a></li>
+									<li><a href="#">保证24小时内发货</a></li>
+									<li><a href="#">赠送积分，积分可用于支</a></li>
+									<li><a href="#">收货后可以7天内无理由</a></li>
+									<li><a href="#">提供电子商务小包</a></li>
+									<li><a href="#">配送造成的所有损失</a></li>
+									<li><a href="#">提供免费短信提醒服务</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="clear"></div>
+
+						<div class="bookWrap">
+							<div class="recommended-book">
+								<div class="title">
+									<img src="./img/voice.png">
+									<h2>推荐商品</h2>
+									<div style="float: right;font-size: 14px;">
+										<span style="color: #D80000; font-weight: bold">1</span><span style="color: lightgrey; font-weight: bold"><span>/4</span>
+									</div>
+									<hr />
+								</div>
+
+
+
+								<div class="list">
+									<div class="list_item">
+										<div class="pic">
+											<img src="./img/item1.jpg" height="190px" width="160px"/></div>
+										<div class="bookname"><a href="#">蒲扇</a></div>
+										<div class="author">日用品</div>
+										<div class="price">
+											<div class="price1">￥15.9</div>
+											<div class="price2">￥<span>39.80</span></div>
+										</div>
+									</div>
+
+									<div class="list_item">
+										<div class="pic">
+											<img src="./img/item2.jpg" height="190px" width="160px" /></div>
+										<div class="bookname"><a href="#">国风画板</a></div>
+										<div class="author">观赏物</div>
+										<div class="price">
+											<div class="price1">￥13.70</div>
+											<div class="price2">￥<span>36.00</span></div>
+										</div>
+									</div>
+									<div class="list_item">
+										<div class="pic">
+											<img src="./img/item3.jpg" height="190px" width="160px" /></div>
+										<div class="bookname"><a href="#">上新礼盒</a></div>
+										<div class="author">盒子</div>
+										<div class="price">
+											<div class="price1">￥12.30</div>
+											<div class="price2">￥<span>35.00</span></div>
+										</div>
+									</div>
+									<div class="list_item">
+										<div class="pic">
+											<img src="./img/item4.jpg" height="190px" width="160px"/></div>
+										<div class="bookname"><a href="#">桌面屏风</a></div>
+										<div class="author">摆饰</div>
+										<div class="price">
+											<div class="price1">￥13.10</div>
+											<div class="price2">￥<span>32.80</span></div>
+										</div>
+									</div>
+									<div class="list_item">
+										<div class="pic">
+											<img src="./img/item5.jpg" height="190px" width="160px" /></div>
+										<div class="bookname"><a href="#">灯笼</a></div>
+										<div class="author">灯笼</div>
+										<div class="price">
+											<div class="price1">￥11.98</div>
+											<div class="price2">￥<span>29.80</span></div>
+										</div>
+									</div>
+									<div class="list_item">
+										<div class="pic">
+											<img src="./img/item6.jpg" height="190px" width="160px" /></div>
+										<div class="bookname"><a href="#">盒子</a></div>
+										<div class="author">盒子</div>
+										<div class="price">
+											<div class="price1">￥10.50</div>
+											<div class="price2">￥<span>35.00</span></div>
+										</div>
+									</div>
+									<div class="list_item">
+										<div class="pic">
+											<img src="./img/item7.jpg" height="190px" width="160px" /></div>
+										<div class="bookname"><a href="#">夜灯</a></div>
+										<div class="author">日用品</div>
+										<div class="price">
+											<div class="price1">￥12.30</div>
+											<div class="price2">￥<span>35.00</span></div>
+										</div>
+									</div>
+									<div class="list_item">
+										<div class="pic">
+											<img src="./img/item8.jpg"height="190px" width="160px" /></div>
+										<div class="bookname"><a href="#">茶具<>
+										</div>
+										<div class="author">日用品</div>
+										<div class="price">
+											<div class="price1">￥13.10</div>
+											<div class="price2">￥<span>32.80</span></div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="book-hot">
+							<div class="zhinan">
+								<a href="#"><img src="./img/zhinan.jpg"></a>
+							</div>
+							<div class="rank">
+								<img src="./img/rank.png">
+								<h2>近期热销榜</h2>
+							</div>
+							<div class="hot-list">
+								<div class="hot-list-itme">
+									<div class="list1">
+										<span class="num redcolor">1</span>中国风双面流速团扇
+									</div>
+									<div class="list2">
+										<div>
+											<span class="num redcolor">1</span>
+										</div>
+										<div>
+											<img src="./img/item1.jpg">
+										</div>
+										<span class="right">
+											<div class="h2">
+												<div><a href="#">中国风双面流速团扇</a></div>
+												<div class="price1">¥11.90</div>
+												<div class="price2"><span>¥39.80</span></div>
+											</div>
+										</span>
+									</div>
+								</div>
+								<div class="hot-list-itme">
+									<div class="list1">
+										<span class="num redcolor">2</span>国风纸浆画板美术用
+									</div>
+									<div class="list2">
+										<div>
+											<span class="num redcolor">2</span>
+										</div>
+										<div>
+											<img src="./img/item2.jpg">
+										</div>
+										<span class="right">
+											<div class="h2">
+												<div><a href="#">国风纸浆画板美术用</a></div>
+												<div class="price1">¥11.90</div>
+												<div class="price2"><span>¥39.50</span></div>
+											</div>
+										</span>
+									</div>
+								</div>
+								<div class="hot-list-itme">
+									<div class="list1">
+										<span class="num redcolor">3</span>上新手账古风纸胶带礼盒
+									</div>
+									<div class="list2">
+										<div>
+											<span class="num redcolor">3</span>
+										</div>
+										<div>
+											<img src="./img/item3.jpg">
+										</div>
+										<span class="right">
+											<div class="h2">
+												<div><a href="#">上新手账古风纸胶带礼盒</a></div>
+												<div class="price1">¥9.60</div>
+												<div class="price2"><span>¥32.00</span></div>
+											</div>
+										</span>
+									</div>
+								</div>
+								<div class="hot-list-itme">
+									<div class="list1">
+										<span class="num">4</span>千里江山图桌面小屏风
+									</div>
+									<div class="list2">
+										<div>
+											<span class="num">4</span>
+										</div>
+										<div>
+											<img src="./img/item4.jpg">
+										</div>
+										<span class="right">
+											<div class="h4">
+												<div><a href="#">千里江山图桌面小屏风</a></div>
+												<div class="price1">¥10.40</div>
+												<div class="price2"><span>¥29.80</span></div>
+											</div>
+										</span>
+									</div>
+								</div>
+								<div class="hot-list-itme">
+									<div class="list1">
+										<span class="num">5</span>元宵节古风花草纸花灯
+									</div>
+									<div class="list2">
+										<div>
+											<span class="num">5</span>
+										</div>
+										<div>
+											<img src="./img/item5.jpg">
+										</div>
+										<span class="right">
+											<div class="h2">
+												<div><a href="#">元宵节古风花草纸花灯</a></div>
+												<div class="price1">¥13.70</div>
+												<div class="price2"><span>¥36.00</span></div>
+											</div>
+										</span>
+									</div>
+								</div>
+								<div class="hot-list-itme">
+									<div class="list1">
+										<span class="num">6</span>森系复古礼盒
+									</div>
+									<div class="list2">
+										<div>
+											<span class="num">6</span>
+										</div>
+										<div>
+											<img src="./img/item6.jpg">
+										</div>
+										<span class="right">
+											<div class="h2">
+												<div><a href="#">森系复古礼盒</a></div>
+												<div class="price1">¥14.90</div>
+												<div class="price2"><span>¥49.80</span></div>
+											</div>
+										</span>
+									</div>
+								</div>
+								<div class="hot-list-itme">
+									<div class="list1">
+										<span class="num">7</span>实木温馨床头夜灯
+									</div>
+									<div class="list2">
+										<div>
+											<span class="num">7</span>
+										</div>
+										<div>
+											<img src="./img/item7.jpg">
+										</div>
+										<span class="right">
+											<div class="h2">
+												<div><a href="#">实木温馨床头夜灯</a></div>
+												<div class="price1">¥18.00</div>
+												<div class="price2"><span>¥45.00</span></div>
+											</div>
+										</span>
+									</div>
+								</div>
+								<div class="hot-list-itme">
+									<div class="list1">
+										<span class="num">8</span>国潮古风陶瓷
+									</div>
+									<div class="list2">
+										<div>
+											<span class="num">8</span>
+										</div>
+										<div>
+											<img src="./img/item8.jpg">
+										</div>
+										<span class="right">
+											<div class="h2">
+												<div><a href="#">国潮古风陶瓷</a></div>
+												<div class="price1">¥14.00</div>
+												<div class="price2"><span>¥35.00</span></div>
+											</div>
+										</span>
+									</div>
+								</div>
+								<div class="hot-list-itme">
+									<div class="list1">
+										<span class="num">9</span>青叶狼毫小毛笔
+									</div>
+									<div class="list2">
+										<div>
+											<span class="num">9</span>
+										</div>
+										<div>
+											<img src="./img/b9.png">
+										</div>
+										<span class="right">
+											<div class="h2">
+												<div><a href="#">青叶狼毫小毛笔</a></div>
+												<div class="price1">¥6.50</div>
+												<div class="price2"><span>¥26.00</span></div>
+											</div>
+										</span>
+									</div>
+								</div>
+								<div class="hot-list-itme">
+									<div class="list1">
+										<span class="num">10</span>汉服刺绣大袖衫齐腰襦裙
+									</div>
+									<div class="list2">
+										<div>
+											<span class="num">10</span>
+										</div>
+										<div>
+											<img src="./img/b10.png">
+										</div>
+										<span class="right">
+											<div class="h2">
+												<div><a href="#">汉服刺绣大袖衫齐腰襦裙</a></div>
+												<div class="price1">¥6.00</div>
+												<div class="price2"><span>¥39.80</span></div>
+											</div>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="clear"></div>
+					</div>
+
+				</div>
+				<div class="clear"></div>
+			</div>
+
+			<br /><br /><br /><br /><br /><br /><br />
+			<br /><br /><br /><br /><br /><br /><br />
+			<br /><br /><br /><br /><br /><br /><br />
+			<br /><br /><br /><br /><br /><br /><br />
+			<br /><br /><br /><br /><br /><br /><br />
+
+	</body>
+</html>
